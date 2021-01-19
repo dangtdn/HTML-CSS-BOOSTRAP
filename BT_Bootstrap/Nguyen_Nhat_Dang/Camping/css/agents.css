@@ -1,0 +1,78 @@
+.agents h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.agents .agents-content .content-item {
+  padding: 0px 30px;
+}
+
+.agents .agents-content .content-item .img {
+  margin-bottom: 30px;
+}
+
+.agents .agents-content .content-item .img img {
+  width: 100%;
+  -webkit-box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+.agents .agents-content .content-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.agents .agents-content .content-item .info span {
+  font-size: 15px;
+  color: #ef9632;
+  font-weight: 700;
+}
+
+.agents .agents-content .content-item .info h2 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.agents .agents-content .content-item .info p {
+  color: #666;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.agents .agents-content .content-item .info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.agents .agents-content .content-item .info ul li {
+  list-style: none;
+  padding: 15px;
+}
+
+.agents .agents-content .content-item .info ul li a {
+  text-decoration: none;
+}
+
+.agents .agents-content .content-item .info ul li a i:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=agents.css.map */

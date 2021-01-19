@@ -1,0 +1,91 @@
+@import "../Helpers/variables.scss";
+@import "../Helpers/mixin.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    img {
+        width: 150px;
+    }
+
+    .search {
+        border: 1px solid $grey;
+        border-radius: 200px;
+        padding: 10px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        background: $light;
+
+        i {
+            padding: 10px;
+        }
+
+        input {
+            // flex-shrink: 0;  
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+
+    }
+
+    nav {
+
+        a {
+            color: $cPrimary;
+            text-decoration: none;
+            font-weight: $regular;
+            padding: 0px 20px;
+
+            &:hover{
+                color: $cSecondary;
+            }
+        }
+
+        // a:hover {
+        //     color: $cyan;
+        // }
+    }
+
+    > i {
+        color: $cPrimary;
+        font-size: 20px;
+
+        &:hover {
+            color: $cSecondary;
+            cursor: pointer;
+        }
+    }
+
+    .btn-login {
+        // background: $primary;
+        // border: 1px solid $cyan;
+        // padding: 10px;
+        // border-radius: 5px;
+        // width: 100px;
+        @include Button($primary,1px solid $cyan);
+        // color: $cyan;
+        // font-size: 15px;
+        // font-weight: 700;
+        @include Text($cSecondary, $body1, $bold);
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    .btn-signup {
+        // color: $primary;
+        // font-size: $body1;
+        // font-weight: 700;
+        @include Text($cWhite, $body1, $bold);
+        // background: $secondary;
+        // border: 1px solid $cyan;
+        // padding: 10px;
+        // border-radius: 5px;
+        // width: 100px;
+        @include Button($secondary,1px solid $cyan);
+    }
+}

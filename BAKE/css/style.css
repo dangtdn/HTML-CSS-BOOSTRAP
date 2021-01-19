@@ -1,0 +1,507 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 500;
+    font-weight: 600;
+}
+.header {
+    background-color: #4E2A84;
+    width: 100%;
+    
+}
+.header__content {
+    display: flex;
+    text-align: center;
+    height: 60px;
+    /* line-height: 60px; */
+    justify-content: center;
+    align-items: center;
+}
+.header__content a{
+    font-size: 15px;
+}
+.header__content a h1{
+    margin-right: 120px;
+    margin-left: 50px;
+}
+.header__content__navbar {
+    margin-left: 40px;
+}
+.header__content__navbar a{
+    padding: 0px 15px;
+}
+.header__content__navbar a:hover, .header__content__navbar a span:hover {
+    color: rgb(212, 44, 72);
+}
+.header__content__navbar a span {
+    color: rgb(252, 117, 139);
+    font-weight: 300;
+}
+.carousel {
+    background-image: url(../images/b3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel__content {
+    color: #ffffff;
+    text-align: center;
+    /* margin: auto; */
+    font-size: 15px;
+    font-weight: 600;
+    -webkit-animation-name: bounce;
+            animation-name: bounce;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    /* so lan chay */
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+.carousel__content p {
+    font-size: 50px;
+    font-weight: bold;
+    /* padding-top: 200px; */
+}
+.carousel__content p, .carousel__content span, .carousel__content button {
+    margin-bottom: 15px;
+}
+.carousel__content button {
+    background-color: #E81683;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+}
+.carousel__content button:hover {
+    background-color: #ffffff;
+    color: rgb(187, 168, 168);
+}
+.statistic {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statistic__list {
+    display: flex;
+}
+.statistic__list__item {
+    padding: 40px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+}
+.statistic__list__item p {
+    color: #4E2A84;
+}
+.statistic__list__item span {
+    font-size: 20px;
+}
+.video {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.video__list {
+    margin: 0px -10px;
+    display: flex;
+}
+.video__item {
+    width: 50%;
+    padding: 10px;
+}
+.video__item video, 
+.video__item iframe {
+    width: 100%;
+    height: 400px;
+}
+.team {
+    background-color: #4E2A84;
+    width: 100%;
+}
+.team__content {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.team__content > h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    /* margin: 30px 0px; */
+    padding: 30px 0px;
+}
+.team__row {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.team__col {
+    width: calc(100% / 3);
+    padding: 0px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.team__item {
+    position: relative;
+    overflow: hidden;
+}
+.team__item img {
+    width: 100%;
+    display: block;
+    border-radius: 4px 4px 0px 0px;
+}
+.team__item__info {
+    background-color: #E81683;
+    color: #ffffff;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-indent: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+}
+.team__item__info span {
+    font-size: 15px;
+}
+.team__item__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* animation */
+.team__item--1 .team__item__overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+.team__item--1:hover .team__item__overlay{
+    opacity: 1;
+    visibility: visible;
+    /* hien thi */
+    transition-property: all;
+    /* thoi gian chuyen dong */
+    transition-duration: 0.3s;
+    /* trang thai chuyen dong */
+    transition-timing-function: linear;  
+    /* thoi gian delay roi chuyen */
+    transition-delay: 0.1s;
+}
+.team__item:hover .team__item__info {
+    display: none;
+}
+/* di chuyen tu tren xuong */
+.team__item--2 .team__item__overlay {
+    /* top: -100%; */
+    transform: translate(100%, -100%);
+    /* opacity: 0; */
+}
+.team__item--2:hover .team__item__overlay {
+    top: 0;
+    transition: all 0.7s linear;
+    opacity: 1;
+    transform: translate(0);
+}
+/* phong to */
+.team__item--3 .team__item__overlay {
+    /* big and small => scale(x,y) 
+        width*x && height*y
+    */
+    transform: scale(0, 0);
+    
+}
+.team__item--3:hover .team__item__overlay {
+    transform: scale(1, 1);
+    transition: all 0.5s linear;
+}
+/* xoay */
+.team__item--4 .team__item__overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+.team__item--4:hover .team__item__overlay {
+    opacity: 1;
+    visibility: visible;
+    /* xoay 360 do */
+    transform: rotate(360deg);
+    transition: all 2s linear;
+}
+.team__item--5 .team__item__overlay {
+    transform: scale(0,0);
+}
+.team__item--5:hover .team__item__overlay {
+    visibility: visible;
+    transform: scale(1,1) rotate(360deg);
+    transition: all 2s linear;
+}
+.team__item--6 .team__item__overlay {
+    transform: scale(0,0) translateX(-100%);
+}
+.team__item--6:hover .team__item__overlay {
+    visibility: visible;
+    transform: scale(1,1);
+    transition: all 2s linear;
+}
+.team__item__overlay p:first-child {
+    color: #ff0e83;
+    font-size: 25px;
+    font-weight: 600;
+}
+.team__item__overlay span {
+    color: #ffffff;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0px;
+}
+.team__item__overlay p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 30px;
+}
+.team__item__social i{
+    /* padding: 10px; */
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.team__item__social i:hover {
+    color: #ff0e83;
+    border: 2px solid #ff0e83;
+    transition: all 0.3s linear;
+}
+.contact {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin-bottom: 30px;
+}
+.contact h1 {
+    font-size: 40px;
+    padding: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    max-width: 1200px;
+    margin: auto;
+}
+.contact__form__col:nth-child(1) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact__form__col:nth-child(2) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact__form__col:nth-child(3) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact__form__col:nth-child(1) ,
+.contact__form__col:nth-child(2){
+    padding: 10px;
+}
+.contact__form__col:nth-child(3) {
+    padding: 0px 10px;
+}
+.contact__form__col input[type="text"],
+.contact__form__col input[type="email"],
+.contact__form__col select,
+.contact__form__col textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+} 
+.contact__radio {
+    margin: 10px 0px;
+}
+.contact__form button {
+    display: block;
+    padding: 10px 25px;
+    background-color: #ff0e83;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    margin: auto;
+}
+.map {
+    width: 100%;
+    height: 200px;
+    margin: 20px 0px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-gap: 20px; khoang cach*/
+    margin: 40px 0px;
+    background-color: #4E2A84;
+    /* trải màu */
+    background-image: linear-gradient(to right, pink, yellow, orange, skyblue);
+}
+.intro img {
+    width: 100%;
+}
+.intro__item--2 {
+    grid-column: 2/span 2;
+    /* grid-column: n/span m; 
+    n la vi tri hien tai
+    m la so cot chiem */
+}
+.intro__item--4 {
+    grid-column: 1/span 2;
+}
+.intro__item--9 {
+    grid-column: 3/span 2;
+}
+
+.demo {
+    background-color: red;
+    width: 800px;
+    height: 600px;
+    border-radius: 70px;
+    position: relative;
+}
+.ball {
+    width: 140px;
+    height: 140px;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: ball 4s infinite;
+            animation: ball 4s infinite;
+    /* animation-name: ball;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+    /* animation-timing-function: linear; */
+}
+.ball:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+/* prefix */
+@-webkit-keyframes ball {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        left: 0;
+        top: calc(100% - 140px);
+    }
+    50% {
+        top: calc(100% - 140px);
+        left: calc(100% - 140px);
+    }
+    75% {
+        top: 0;
+        left: calc(100% - 140px);
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+
+@keyframes ball {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        left: 0;
+        top: calc(100% - 140px);
+    }
+    50% {
+        top: calc(100% - 140px);
+        left: calc(100% - 140px);
+    }
+    75% {
+        top: 0;
+        left: calc(100% - 140px);
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@-webkit-keyframes bounce {
+    /* 0 => 100%. vd: 4s => 100% */
+    0% {
+        transform: translate(0, -300px);
+        opacity: 0;
+    }
+    70% {
+        transform: translate(0, 100px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    /* 0 => 100%. vd: 4s => 100% */
+    0% {
+        transform: translate(0, -300px);
+        opacity: 0;
+    }
+    70% {
+        transform: translate(0, 100px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}

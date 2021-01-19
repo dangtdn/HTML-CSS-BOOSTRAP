@@ -1,0 +1,83 @@
+.header {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .carousel {
+        width: 100%;
+        min-height: 300px;
+        position: relative;
+        
+        .navbar-wrap {
+            border: 3px solid #708DC0;
+        }
+    }
+
+    .navbar {
+        font-size: 17px;
+        
+        .navbar-brand {
+            padding-left: 20px;
+            font-size: 38px;
+            padding-top: 0;
+            font-weight: 400;
+        }
+    
+        .nav-item {
+            padding: 0px 15px;
+    
+            .nav-link {
+                padding-top: 0;
+                color: #ffffff;
+                letter-spacing: 2px;
+                font-weight: 500;
+            }
+            .nav-link:hover {
+                color: #ef9632;
+                transition: all 0.5s;
+            }
+            
+        }
+
+        .nav-listdown {
+            position: relative;
+
+            .menu-down {
+                background: #ffffff;
+                position: absolute;
+                top: 30px;
+                left: 10px;
+                width: 205px;
+                opacity: 0;
+                visibility: hidden;
+
+                 ul {
+                     list-style: none;
+                     padding: 15px 3px;
+                     li {
+                         padding: 2px 10px;
+                         font-weight: 500;
+
+                        a:hover {
+                            color: #ef9632;
+                            transition: all 0.5s;
+                        }
+                     }
+                 }
+            }
+        }
+        
+        .nav-listdown:hover .menu-down{
+            transition: all 0.5s;
+            opacity: 1;
+            visibility: visible;
+        }
+        .nav-item.active {
+            
+            .nav-link {
+                color: #ef9632;
+            } 
+        }
+    }
+}

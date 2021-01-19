@@ -1,0 +1,120 @@
+.header .info {
+  background: #b06010;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+
+.header .info p {
+  color: #ffffff;
+  padding: 13px 0px;
+}
+
+.header .info p span {
+  margin-right: 20px;
+}
+
+.header .info p span i {
+  margin-right: 10px;
+}
+
+.header .info p span a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header .navbar .navbar-brand {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.header .navbar .navbar-brand i {
+  font-size: 28px;
+  color: #204b87;
+}
+
+.header .navbar .navbar-brand span {
+  display: block;
+  color: #b06010;
+  font-size: 13px;
+  letter-spacing: 8px;
+  text-indent: 20px;
+}
+
+.header .navbar .navbar-tog {
+  border: 1px solid transparent;
+}
+
+.header .navbar .navbar-tog i {
+  font-size: 25px;
+}
+
+.header .navbar .navbar-tog:focus {
+  border: 1px solid transparent !important;
+  outline: none !important;
+}
+
+.header .navbar a {
+  color: #000;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.header .navbar a:hover {
+  color: #b06010;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.header .navbar .icon a i {
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 7px;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.header .navbar .icon a i:hover {
+  color: #b06010;
+  background: #ffffff !important;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  border: 1px solid #b06010;
+}
+
+.header .navbar .navbar-nav .nav-item {
+  padding: 0px 10px;
+}
+
+.header .navbar .navbar-nav .nav-item .active {
+  color: #b06010;
+}
+
+.header .navbar .navbar-nav .nav-item .dropdown-menu {
+  outline: none;
+  border: none;
+  padding: 0px;
+}
+
+.header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  font-size: 17px;
+  padding: 15px;
+}
+
+.header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #015BB1;
+  color: #ffffff;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+/*# sourceMappingURL=header.css.map */

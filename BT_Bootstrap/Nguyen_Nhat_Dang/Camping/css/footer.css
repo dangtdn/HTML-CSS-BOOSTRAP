@@ -1,0 +1,120 @@
+.footer .footer-top {
+  background: #1E272E;
+}
+
+.footer .footer-top .left h2 {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 10px 0px;
+}
+
+.footer .footer-top .left p {
+  color: #73828e;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+
+.footer .footer-top .mid h2 {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 10px 0px;
+}
+
+.footer .footer-top .mid a {
+  display: block;
+  color: #73828e;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 5px 0px;
+  text-decoration: none;
+}
+
+.footer .footer-top .mid a:hover {
+  color: #c0cdd8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer .footer-top .right h2 {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 10px 0px;
+}
+
+.footer .footer-top .right p {
+  color: #73828e;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.footer .footer-top .right .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #8C9398;
+  border-radius: 4px;
+}
+
+.footer .footer-top .right .email input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 13px;
+  background: transparent;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.footer .footer-top .right .email i {
+  color: #8C9398;
+  font-size: 19px;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.footer .footer-bottom {
+  background: #222B32;
+  margin-bottom: 70px;
+}
+
+.footer .footer-bottom .left p {
+  color: #8c9398;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.footer .footer-bottom .right {
+  text-align: right;
+}
+
+.footer .footer-bottom .right i {
+  font-size: 16px;
+  color: white;
+  padding: 13px;
+}
+
+.footer .footer-bottom .right i:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/*# sourceMappingURL=footer.css.map */

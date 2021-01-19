@@ -1,0 +1,196 @@
+@import "../Helper/variables.scss";
+
+.footer {
+
+    .footer-top {
+        background: #000000;
+        font-size: $body1;
+        font-weight: $regular;
+        letter-spacing: $spacing*0.1;
+        line-height: 28px;
+
+        .left {
+
+            h2 {
+                color: $cWhite;
+                font-size: $h2;
+                font-weight: $medium;
+                letter-spacing: 1.5px;
+                margin-bottom: 50px;
+            }
+    
+            ul {
+                
+                li {
+                    list-style: none;
+                    margin-bottom: 14px;
+                    color: $cGray;
+
+                    span {
+                        display: block;
+                        text-indent: 35px;
+                    }
+
+                    a {
+                        color: $cGray;
+                        text-decoration: none;
+                    }
+                    
+                    i {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+        .mid {
+    
+            h2 {
+                color: $cWhite;
+                font-size: $h2;
+                font-weight: $medium;
+                letter-spacing: 1.5px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                color: $cGray;
+                margin-bottom: 14px;
+                
+            }
+
+            .icon {
+    
+                a {
+
+                    i {
+                        text-align: center;
+                        font-size: $body1;
+                        color: $cWhite;
+                        line-height: 30px;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        margin-right: 7px;
+                        border: 1px solid transparent;
+                        transition: all 0.9s;
+                    }
+        
+                    i:hover {
+                        color: $cSecondary;
+                        background: $black-1 !important;
+                        transition: all 0.9s;
+                        border: 1px solid $cSecondary;
+                    }
+                }
+            }
+        }
+        .right {
+    
+            h2 {
+                color: $cWhite;
+                font-size: $h2;
+                font-weight: $medium;
+                letter-spacing: 1.5px;
+                margin-bottom: 50px;
+            }
+    
+            ul {
+                
+                li {
+                    list-style: none;
+                    margin-bottom: 14px;
+                    color: $cGray;
+
+                    a {
+                        color: $cGray;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $cBlue;
+                            transition: all 0.7s ease-in 0s;
+                        }
+                    }
+                    
+                    i {
+                        margin-right: 15px;
+                        color: $cBlue;
+                    }
+                }
+            }
+        }
+        .bottom {
+
+            h2 {
+                color: $cWhite;
+                font-size: $h2;
+                font-weight: $medium;
+                letter-spacing: 1.5px;
+                margin-bottom: 50px;
+            }
+            .emailBox {
+                display: flex;
+                flex-grow: 1;
+                input {
+                    font-size: $subtitle1;
+                    font-weight: $regular;
+                    letter-spacing: $spacing*0.1;
+                    color: $cWhite;
+                    width: 100%;
+                    margin-right: 20px;
+                    outline: none;
+                    border: none;
+                    background-color: $black-2;
+                    padding-left: 15px;
+                    &::placeholder {
+                        color: $cWhite;
+                    }
+                }
+                button {
+                    padding: 10px 80px;
+                    font-size: $subtitle1;
+                    font-weight: $regular;
+                    letter-spacing: $spacing*0.1;
+                    color: $cWhite;
+                    outline: none;
+                    border: none;
+                    background-color: $blue;
+                    transition: all 0.9s;
+                    &:hover {
+                        background-color: $secondary;
+                        transition: all 0.9s;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        background: $black-2;
+        font-size: $body1;
+        font-weight: $regular;
+        letter-spacing: $spacing*0.1;
+
+        .left {
+            p {
+                color: #8c9398;
+                font-size: $body1;
+                font-weight: $regular;
+                letter-spacing: $spacing*0.1;
+                margin-bottom: 0px;
+                margin-top: 5px;
+                text-align: center;
+                
+                span {
+                    border-bottom: 1px solid $cSecondary;
+                    a {
+                        color: $cSecondary;
+                        &:hover {
+                            color: $cWhite;
+                            transition: all 0.7s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,123 @@
+@import "../Helper/variables.scss";
+
+.header {
+    
+    .info {
+        background: $secondary;
+        font-size: $subtitle2;
+        font-weight: $regular;
+        letter-spacing: $spacing*0.1;
+
+        p {
+            color: $cWhite;
+            padding: 13px 0px;
+            span {
+                margin-right: 20px;
+    
+                i {
+                    margin-right: 10px;
+                }
+                a {
+                    color: $cWhite;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+   .navbar {
+
+        .navbar-brand {
+            font-size: $h2;
+            font-weight: $bold;
+            line-height: 25px;
+
+            i {
+                font-size: $h3;
+                color: $cBlue;
+            }
+
+            span {
+                display: block;
+                color: $cSecondary;
+                font-size: $body2;
+                letter-spacing: $spacing;
+                text-indent: 20px;
+            }
+        }
+
+        .navbar-tog {
+            border: 1px solid transparent;
+            i {
+                font-size: $h4;
+            }
+            &:focus {
+                border: 1px solid transparent !important;
+                outline: none !important;
+            }
+        }
+
+        a {
+            color: $black-1;
+            font-size: $subtitle1;
+            font-weight: $medium;
+            letter-spacing: $spacing*0.1;
+            transition: all 0.9s;
+            &:hover {
+                color: $cSecondary;
+                transition: all 0.9s;
+            }
+        }
+
+        .icon {
+    
+            a {
+
+                i {
+                    text-align: center;
+                    font-size: $body1;
+                    color: $cWhite;
+                    line-height: 30px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-right: 7px;
+                    border: 1px solid transparent;
+                    transition: all 0.9s;
+                }
+    
+                i:hover {
+                    color: $cSecondary;
+                    background: $primary !important;
+                    transition: all 0.9s;
+                    border: 1px solid $cSecondary;
+                }
+            }
+        }
+
+        .navbar-nav {
+
+            .nav-item {
+                padding: 0px 10px;
+                .active {
+                    color: $cSecondary;
+                }
+                .dropdown-menu {
+                    outline: none;
+                    border: none;
+                    padding: 0px;
+                    .dropdown-item {
+                        font-size: $subtitle3;
+                        padding: 15px;
+                        &:hover {
+                            background-color: $blue;
+                            color: $cWhite;
+                            transition: all 0.9s;
+                        }
+                    }
+                }
+            }
+            
+        }
+   }
+}

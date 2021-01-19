@@ -1,0 +1,10 @@
+@import "./Helpers/variables.scss";
+@import "./Helpers/mixin.scss";
+@import "./Component/header.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

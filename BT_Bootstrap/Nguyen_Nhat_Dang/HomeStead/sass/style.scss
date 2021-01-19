@@ -1,0 +1,1150 @@
+@import "./Helper/variables.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.carouselSlider {
+
+    .carousel-indicators {
+                
+        i {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            color: $secondary;
+        }
+    }
+    .carousel {
+            .carousel-indicators {
+                bottom: 100px;
+                li {
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50%;
+                    background-color: $cSecondary;
+                    margin: 5px;
+                    &:hover {
+                        background-color: $cWhite;
+                    }
+                }
+            }
+            
+            .carousel-inner {
+
+                .carousel-item {
+
+                    .carousel-caption {
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        bottom: initial;
+                        width: 1200px;
+
+                        h2 {
+                            font-size: 50px;
+                            letter-spacing: $spacing*0.2;
+                            font-weight: $regular;
+                            margin-bottom: 40px;
+                            line-height: 70px;
+                        }
+
+                        i {
+                            color: $cSecondary;
+                            padding: 25px;
+                            font-size: $subtitle1;
+                        }
+                    }
+                }
+
+                .carousel-item-1 {
+                    background-image: url(../images_Homestead/banner-1.jpg);
+                    height: 700px;
+                }
+                
+                .carousel-item-2 {
+                    background-image: url(../images_Homestead/banner-2.jpg);
+                    height: 700px;
+                }
+                
+                .carousel-item-3 {
+                    background-image: url(../images_Homestead/banner.jpg);
+                    height: 700px;
+                }
+            }
+    }
+}
+
+.intro {
+    
+    .content {
+
+        .top {
+            text-align: center;
+
+            h2 {
+                font-size: $h1;
+                font-weight: $bold;
+                color: $cPrimary;
+                letter-spacing: $spacing*0.3;
+            }
+        }
+        .top p:nth-child(2) {
+            font-size: $subtitle1;
+            font-weight: $regular;
+            color: $cSecondary;
+            letter-spacing: $spacing*0.9;
+        }
+        .top p:nth-child(3) {
+            font-size: $subtitle2;
+            font-weight: $regular;
+            color: $cGray;
+            letter-spacing: $spacing*0.1;
+            line-height: 30px;
+            margin: 25px 70px;
+        }
+
+        .bottom {
+            text-align: center;
+
+            .item {
+                padding: 0px 10px;
+                &:hover i{
+                    color: $cSecondary;
+                    transform: rotateY(-10deg);
+                    transition: all 0.5s linear;
+                }
+                i {
+                    font-size: $h1;
+                    color: $cBlue;
+                    transform: rotateY(180deg);
+                    transition-delay: 0.7s;
+                    transition: all 0.5s linear;
+                }
+                h3 {
+                    margin: 30px 0px;
+                    font-size: $h4;
+                    font-weight: $bold;
+                    color: $cSecondary;
+                    letter-spacing: $spacing*0.2;
+                }
+                p {
+                    font-size: $subtitle2;
+                    font-weight: $regular;
+                    color: $cGray;
+                    letter-spacing: $spacing*0.1;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+
+    .content {
+        height: 530px;
+        background-color: $blue;
+        .img {
+            background-image: url(../images_Homestead/2.jpg);
+            min-height: 488px;
+        }
+
+        .info {
+            
+            h2 {
+                font-size: $h1;
+                font-weight: $bold;
+                color: $cWhite;
+                letter-spacing: $spacing*0.3;
+                margin-bottom: 18px;
+            }
+            p {
+                font-size: $subtitle1;
+                font-weight: $regular;
+                color: $black-1;
+                letter-spacing: $spacing*0.1;
+                line-height: 38px;
+            }
+
+            ul {    
+
+                li {
+                    list-style: none;
+                    font-size: $subtitle1;
+                    font-weight: $regular;
+                    color: $cWhite;
+                    letter-spacing: $spacing*0.1;
+                    padding: 15px 0px;
+
+                    i {
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team {
+
+    .content {
+        text-align: center;
+        h2 {
+            font-size: $h1;
+            font-weight: $bold;
+            color: $cPrimary;
+            letter-spacing: $spacing*0.3;
+        }
+        p {
+            font-size: $subtitle1;
+            font-weight: $regular;
+            color: $cSecondary;
+            letter-spacing: $spacing*0.7;
+            margin-bottom: 100px;
+        }
+        .members {
+
+            .item {
+                padding: 0px 40px;
+                img {
+                    width: 200px;
+                    border-radius: 50%;
+                }
+                h3 {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    font-size: $h4;
+                    font-weight: $bold;
+                    color: $cSecondary;
+                    letter-spacing: $spacing*0.2;
+                }
+                p {
+                    font-size: $subtitle1;
+                    font-weight: $regular;
+                    color: $black-2;
+                    letter-spacing: $spacing*0.3;
+                }
+                .icon {
+                    padding: 25px 00px;
+                    border-top: 2px solid $black-1;
+                    display: flex;
+                    justify-content: center;
+
+                    &:hover {
+                        border-top: 2px solid $cSecondary;
+                        transition: all 0.9s;
+                    }
+                    i {
+                        font-size: $subtitle1;
+                        padding: 10px;
+                        color: $cBlue;
+                        cursor: pointer;
+                        transition: all 0.9s;
+
+                        &:hover {
+                            color: $cSecondary;
+                            transition: all 0.9s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.feedback {
+    background-image: url(../images_Homestead/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    .feedback-heading {
+        text-align: center;
+        h2 {
+            font-size: $h1;
+            font-weight: $bold;
+            color: $cWhite;
+            letter-spacing: $spacing*0.3;
+        }
+        > p {
+            font-size: $subtitle1;
+            font-weight: $regular;
+            color: $cSecondary;
+            letter-spacing: $spacing*0.7;
+            margin-bottom: 100px;
+        }
+    }
+
+    .feedback-content {
+
+        .owl-carousel {
+            
+            .item {
+                padding: 0px 20px;
+                margin-bottom: 40px;
+                .top {
+                    background: $GrayTr;
+                    padding: 16px;
+                    position: relative;
+                    p {
+                        font-size: $body1;
+                        font-weight: $medium;
+                        letter-spacing: $spacing*0.1;
+                        line-height: 28px;
+                        color: $cWhite;
+                        margin: 0px;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 115px;
+                        bottom: -9px;
+                        border-top: 9px solid $GrayTr;
+                        border-left: 9px solid transparent;
+                        border-right: 9px solid transparent;
+                    }
+                }
+                .bottom {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 30px;
+                    .img img {
+                        width: 80px;
+                    }
+                    .info {
+                        line-height: 8px;
+                        text-indent: 10px;
+                        h3 {
+                            font-size: $subtitle2;
+                            font-weight: $bold;
+                            color: $cWhite;
+                        }
+                        span {
+                            display: inline-block;
+                            font-size: $subtitle1;
+                            font-weight: $regular;
+                            color: $cGrayTr;
+                            letter-spacing: $spacing*0.1;
+                        }
+                    }
+                }
+            }
+            .slick-dots {
+                li {
+                    button {
+                        width: 15px;
+                        height: 15px;
+                        color: $cSecondary;
+                        background-color: $secondary;
+                        border-radius: 50%;
+                        &::before {
+                            width: 15px;
+                            height: 15px;
+                            font-size: 15px;
+                            color: orange;
+                            opacity: 0.5s;
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.overview {
+
+    .content {
+        text-align: center;
+        h2 {
+            margin-top: 50px;
+            font-size: $h1;
+            font-weight: $bold;
+            color: $cPrimary;
+            letter-spacing: $spacing*0.3;
+        }
+        > p {
+            font-size: $subtitle1;
+            font-weight: $regular;
+            color: $cSecondary;
+            letter-spacing: $spacing*0.7;
+            margin-bottom: 50px;
+        }
+        .statistic {
+            text-align: left;
+            background-color: #212121;
+            padding: 70px 0px;
+            padding-right: 90px;
+            margin-bottom: 30px;
+            .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-size: $h1;
+                    color: $cSecondary;
+                    padding-right: 50px;
+                }
+                > p {
+                    font-size: $h1;
+                    font-weight: $bold;
+                    color: $cWhite;
+                    margin: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        font-size: $subtitle2;
+                        font-weight: $medium;
+                        color: $cWhite;
+                        letter-spacing: $spacing*0.1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive wedsite
+// Extra small devices (portrait phones, less than 576px)
+// @media (max-width: 575.98px) { }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header {
+        .info {
+            font-size: $body1;
+            p {
+                padding: 10px 0px;
+            }
+        }
+
+        .navbar {
+            .navbar-brand {
+                font-size: $h5;
+                i {
+                    font-size: $h6;
+                }
+                span {
+                    letter-spacing: $spacing*0.5;
+                }
+            }
+            .navbar-nav {
+                background-color: $black-2;
+                li {
+                    text-align: center;
+                    padding: 0px 5px !important;
+                    a {
+                        font-size: $body1;
+                        padding: 7px 0px;
+                        color: $cWhite;
+                    }
+                }
+            }
+            .icon {
+                text-align: center;
+                background-color: $black-2;
+                padding-bottom: 20px;
+                a i {
+                    width: 27px;
+                    height: 27px;
+                    line-height: 27px;
+                    font-size: $body1;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    .carouselSlider {
+        .carousel-indicators {
+            bottom: 70px !important;
+            li {
+                width: 10px !important;
+                height: 10px !important;
+            }
+        } 
+        .carousel-inner {
+            .carousel-item {
+                height: 450px !important;
+            }
+
+            .carousel-caption {
+                width: 768px !important;
+                h2 {
+                    margin: 0px 150px;
+                    font-size: $h3 !important;
+                    letter-spacing: 0px !important;
+                    line-height: 40px !important;
+                }
+                .icon {
+                    i {
+                        padding: 20px !important;
+                        font-size: $subtitle2 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .intro {
+        .content {
+            .top {
+                h2 {
+                    font-size: $h2;
+                }
+                p:nth-child(2) {
+                    font-size: $subtitle2;
+                    letter-spacing: $spacing*0.7;
+                }
+                p:nth-child(3) {
+                    font-size: $subtitle4;
+                    margin: 20px 0px;
+                }
+            }
+            .bottom {
+                .item {
+                    p {
+                        font-size: $subtitle3 !important;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    .banner {
+        .content  {
+            height: 950px;
+            .col-img {
+                padding-right: 0px;
+                .img {
+                    height: 500px;
+                }
+            }
+            .info {
+                h2 {
+                    padding-left: 30px;
+                    letter-spacing: 0px;
+                }
+                p {
+                    padding-left: 30px;
+                }
+                ul li{
+                    padding-left: 30px;
+                    font-size: $subtitle3;
+                }
+            }
+        }
+    }
+
+    .team {
+        .content {
+            h2 {
+                font-size: $h2;
+            }
+            p:nth-child(2) {
+                font-size: $subtitle2;
+                letter-spacing: $spacing*0.7;
+                margin-bottom: 60px;
+            }
+            .members {
+                .item {
+                    padding: 0px 15px;
+                    img {
+                        width: 130px;
+                    }
+                    h3 {
+                        font-size: $subtitle3 !important;
+                    }
+                    p{  
+                        font-size: $subtitle3 !important;
+                        margin-bottom: 20px;
+                    }
+                    .icon i{
+                        font-size: $subtitle4 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .feedback {
+        height: 500px;
+        .feedback-heading {
+            h2 {
+                font-size: $h2;
+            }
+            p:nth-child(2) {
+                font-size: $subtitle2;
+                letter-spacing: $spacing*0.7;
+                margin-bottom: 60px;
+            }
+        }
+        .feedback-content {
+            .item {
+                margin-bottom: 30px;
+                .top {
+                    p{
+                        font-size: $body2 !important;
+                    }
+                }
+                .bottom {
+                    .img img {
+                        width: 60px !important;
+                    }
+                    .info {
+                        span {
+                            font-size: $subtitle2 !important;
+                        }
+                    }
+                }
+            }
+            .owl-carousel {
+                .slick-dots {
+                    li {
+                        button {
+                            width: 10px;
+                            height: 10px;
+                            &::before {
+                                width: 10px;
+                                height: 10px;
+                                font-size: 10px;
+                                color: orange;
+                                opacity: 0.5s;
+                                line-height: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .overview {
+        .content {
+            h2 {
+                font-size: $h2;
+            }
+            p:nth-child(2) {
+                font-size: $subtitle2;
+                letter-spacing: $spacing*0.7;
+                margin-bottom: 50px;
+            }
+            .statistic {
+                padding-right: 0px;
+                padding: 40px 20px;
+                .item {
+                    padding: 20px;
+                    i {
+                        font-size: $h2;
+                        padding-right: 40px;
+                    }
+                    p {
+                        font-size: $h2 !important;
+                        span {
+                            font-size: $body1 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        position: relative;
+        .navbar-collapse {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 85%;
+            z-index: 9999;
+        }
+    }
+
+    .footer {
+        .footer-top {
+            .item {
+                h2 {
+                    font-size: $h3;
+                    margin: 30px 0px;
+                }
+                .left, .mid, .right {
+                    font-size: $subtitle4;
+                }
+                .mid .icon i{
+                    width: 27px;
+                    height: 27px;
+                    line-height: 27px;
+                    margin-right: 0px;
+                }
+                .right {
+                    li {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            .bottom {
+                h2 {
+                    font-size: $h4;
+                    margin: 30px 0px;
+                }
+                button {
+                    margin-right: 80px;
+                    padding: 10px 20px !important;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header {
+        .info {
+            font-size: $body1;
+        }
+
+        .navbar {
+            .navbar-brand {
+                font-size: $h5;
+                i {
+                    font-size: $h6;
+                }
+                span {
+                    letter-spacing: $spacing*0.5;
+                }
+            }
+            .navbar-nav {
+                li {
+                    padding: 0px 5px !important;
+                    a {
+                        font-size: $body2;
+                        padding: 0px;
+                    }
+                }
+            }
+            .icon {
+                a i {
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: $body2;
+                }
+            }
+        }
+    }
+
+    .carouselSlider {
+        .carousel-indicators {
+            bottom: 70px !important;
+            li {
+                width: 10px !important;
+                height: 10px !important;
+            }
+        } 
+        .carousel-inner {
+            .carousel-item {
+                height: 450px !important;
+            }
+
+            .carousel-caption {
+                width: 768px !important;
+                h2 {
+                    font-size: $h3 !important;
+                    letter-spacing: 0px !important;
+                    line-height: 40px !important;
+                }
+                .icon {
+                    i {
+                        padding: 20px !important;
+                        font-size: $subtitle2 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .intro {
+        .content {
+            .top {
+                h2 {
+                    font-size: $h2;
+                }
+                p:nth-child(2) {
+                    font-size: $subtitle2;
+                    letter-spacing: $spacing*0.7;
+                }
+                p:nth-child(3) {
+                    font-size: $subtitle4;
+                    margin: 20px 70px;
+                }
+            }
+            .bottom {
+                .item {
+                    p {
+                        font-size: $subtitle3 !important;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    .banner {
+        .content  {
+            height: 950px;
+            .col-img {
+                padding-right: 0px;
+                .img {
+                    height: 500px;
+                }
+            }
+            .info {
+                h2 {
+                    padding-left: 30px;
+                    letter-spacing: 0px;
+                }
+                p {
+                    padding-left: 30px;
+                }
+                ul li{
+                    padding-left: 30px;
+                    font-size: $subtitle3;
+                }
+            }
+        }
+    }
+
+    .team {
+        .content {
+            h2 {
+                font-size: $h2;
+            }
+            p:nth-child(2) {
+                font-size: $subtitle2;
+                letter-spacing: $spacing*0.7;
+                margin-bottom: 60px;
+            }
+            .members {
+                .item {
+                    img {
+                        width: 130px;
+                    }
+                    h3 {
+                        font-size: $subtitle3 !important;
+                    }
+                    p{  
+                        font-size: $subtitle4 !important;
+                        margin-bottom: 20px;
+                    }
+                    .icon i{
+                        font-size: $subtitle4 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .feedback {
+        height: 500px;
+        .feedback-heading {
+            h2 {
+                font-size: $h2;
+            }
+            p:nth-child(2) {
+                font-size: $subtitle2;
+                letter-spacing: $spacing*0.7;
+                margin-bottom: 60px;
+            }
+        }
+        .feedback-content {
+            .item {
+                margin-bottom: 30px;
+                .top {
+                    p{
+                        font-size: $body2 !important;
+                    }
+                }
+                .bottom {
+                    .img img {
+                        width: 60px !important;
+                    }
+                    .info {
+                        span {
+                            font-size: $subtitle2 !important;
+                        }
+                    }
+                }
+            }
+            .owl-carousel {
+                .slick-dots {
+                    li {
+                        button {
+                            width: 10px;
+                            height: 10px;
+                            &::before {
+                                width: 10px;
+                                height: 10px;
+                                font-size: 10px;
+                                color: orange;
+                                opacity: 0.5s;
+                                line-height: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .overview {
+        .content {
+            h2 {
+                font-size: $h2;
+            }
+            p:nth-child(2) {
+                font-size: $subtitle2;
+                letter-spacing: $spacing*0.7;
+                margin-bottom: 50px;
+            }
+            .statistic {
+                padding-right: 0px;
+                padding: 40px 20px;
+                .item {
+                    padding: 20px;
+                    i {
+                        font-size: $h2;
+                        padding-right: 40px;
+                    }
+                    p {
+                        font-size: $h2 !important;
+                        span {
+                            font-size: $body1 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-top {
+            .item {
+                h2 {
+                    font-size: $h3;
+                }
+                .left, .mid, .right {
+                    font-size: $subtitle4;
+                }
+                .mid .icon i{
+                    width: 27px;
+                    height: 27px;
+                    line-height: 27px;
+                    margin-right: 0px;
+                }
+                .right {
+                    li {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            .bottom {
+                h2 {
+                    font-size: $h4;
+                }
+                button {
+                    margin-right: 50px;
+                    padding: 10px 30px !important;
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header {
+        .info {
+            font-size: $body1;
+        }
+
+        .navbar {
+            .navbar-brand {
+                font-size: $h3;
+                span {
+                    letter-spacing: $spacing*0.7;
+                }
+            }
+            .navbar-nav {
+                li a {
+                    font-size: $subtitle2;
+                }
+            }
+            .icon {
+                a i {
+                    width: 27px;
+                    height: 27px;
+                    line-height: 27px;
+                    font-size: $body2;
+                }
+            }
+        }
+    }
+
+    .carouselSlider {
+        .carousel-indicators {
+            li {
+                width: 10px !important;
+                height: 10px !important;
+            }
+        } 
+        .carousel-inner {
+            
+            .carousel-caption {
+                width: 992px !important;
+                h2 {
+                    font-size: $h2 !important;
+                }
+                .icon {
+                    i {
+                        padding: 20px !important;
+                        font-size: $subtitle2 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .intro {
+        .content {
+            .bottom {
+                .item {
+                    p {
+                        font-size: $subtitle3 !important;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    .banner {
+        .content  {
+            height: 500px;
+            .img {
+                height: 500px;
+            }
+            .info {
+                h2 {
+                    letter-spacing: 0px;
+                }
+                ul li{
+                    font-size: $subtitle3;
+                }
+            }
+        }
+    }
+
+    .team {
+        .members {
+            .item {
+                h3 {
+                    font-size: $h5 !important;
+                }
+                p{  
+                    font-size: $subtitle3 !important;
+                    margin-bottom: 20px;
+                }
+                .icon i{
+                    font-size: $subtitle3 !important;
+                }
+            }
+        }
+    }
+
+    .feedback {
+        .feedback-content {
+            .item {
+                margin-bottom: 40px;
+                .top {
+                    p{
+                        font-size: $body2 !important;
+                    }
+                }
+                .bottom {
+                    .info {
+                        span {
+                            font-size: $subtitle2 !important;
+                        }
+                    }
+                }
+            }
+            .owl-carousel {
+                .slick-dots {
+                    li {
+                        button {
+                            width: 15px;
+                            height: 15px;
+                            &::before {
+                                width: 15px;
+                                height: 15px;
+                                font-size: 15px;
+                                color: orange;
+                                opacity: 0.5s;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .overview {
+        .statistic {
+            .item {
+                p {
+                    font-size: $h2 !important;
+                }
+                span {
+                    font-size: $body1 !important;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-top {
+            .item {
+                h2 {
+                    font-size: $h3;
+                }
+                .left, .mid, .right {
+                    font-size: $body1;
+                }
+                .mid .icon i{
+                    width: 27px;
+                    height: 27px;
+                    line-height: 27px;
+                    margin-right: 20px;
+                }
+            }
+            .bottom {
+                h2 {
+                    font-size: $h3;
+                }
+                button {
+                    margin-right: 80px;
+                    padding: 10px 70px !important;
+                }
+            }
+        }
+    }
+}

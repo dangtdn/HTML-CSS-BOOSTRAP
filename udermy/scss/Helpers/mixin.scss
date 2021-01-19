@@ -1,0 +1,16 @@
+// Mixin
+@mixin Text ($c, $fs, $fw){
+    color: $c;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin Button($bg, $bd) {
+    background: $bg;
+    border: $bd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+// text, button, input, table,...

@@ -1,0 +1,56 @@
+.slider .carousel {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+
+.slider .carousel .carousel-caption {
+  left: 50%;
+  top: 50%;
+  bottom: initial;
+  text-align: left;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.slider .carousel .carousel-caption .caption-grids {
+  letter-spacing: 1px;
+}
+
+.slider .carousel .carousel-caption .caption-grids h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.slider .carousel .carousel-caption .caption-grids p:first-child {
+  color: #ef9632;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.slider .carousel .carousel-caption .caption-grids p:nth-child(3) {
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.slider .carousel .carousel-caption .caption-grids button {
+  background: #ef9632;
+  font-size: 19px;
+  letter-spacing: 1px;
+  border-radius: 7px;
+  padding: 11px 30px;
+}
+
+.slider .carousel .carousel-caption .caption-grids button:hover {
+  background: #FF3838;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/*# sourceMappingURL=slider.css.map */
